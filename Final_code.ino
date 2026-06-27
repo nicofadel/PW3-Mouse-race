@@ -3,9 +3,9 @@ int coilR = A2;
 int motorL = 10;
 int motorR = 9;
 
-int baseSpeed = 160;      // forward speed
-float Kp = 1.2;           // steering strength
-int tolerance = 50;       // ignore small sensor noise
+int baseSpeed = 145;      // reduced speed for improved stability
+float Kp = 1.0;           // smoother steering correction
+int tolerance = 35;   // improved response to sensor imbalance
 
 void setup() {
   pinMode(motorL, OUTPUT);
